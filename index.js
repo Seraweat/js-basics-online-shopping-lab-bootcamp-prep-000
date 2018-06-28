@@ -22,7 +22,7 @@ function viewCart() {
   var cartStr = [];
   var lastElement = "and " + cart[cart.length-1].itemName + " at" + " $" + cart[cart.length-1].itemPrice;
 
-  if (cart.length < 1); {
+  if (cart.length <1) {
     return "Your shopping cart is empty.";
   } else
   for (var i = 0; i < cart.length-1; i++){
