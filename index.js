@@ -23,14 +23,12 @@ function viewCart() {
   if (cart.length < 1) {
     return "Your shopping cart is empty."
   } else
-  for (var i = 0; i <= cart.length; i++){
-  cartStr += cart[0].itemName + " at" + " $" + cart[0].itemPrice + ", ";
+  for (var i = 0; i <cart.length; i++){
+  cartStr += cart[i].itemName + " at" + " $" + cart[i].itemPrice + ", ";
 }
   cartStr = cartStr.slice(0, cartStr.length-6) + "."
   return "In your cart, you have " + cartStr;
 }
-
-
 
 function total() {
   // write your code here
