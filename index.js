@@ -26,7 +26,7 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++){
   cartStr += cart[i].itemName + " at" + " $" + cart[i].itemPrice + ", ";
 }
-  cartStr = cartStr.slice(0, cartStr.length-6) + "."
+  cartStr = cartStr.slice(0, cartStr.length-2) + "."
   return "In your cart, you have " + cartStr;
 }
 
