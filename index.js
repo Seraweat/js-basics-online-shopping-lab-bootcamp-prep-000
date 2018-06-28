@@ -20,14 +20,17 @@ function addToCart(item) {
 
 function viewCart() {
   var cartStr = []
-  if (getCart().length < 1) {
+  if (cart.length < 1) {
     return "Your shopping cart is empty."
   } else
-  for (var i = 0; i <= getCart().length; i++);
-  cartStr += "In your cart, you have " + getCart()[i].itemName + " at" + " $" + getCart()[i].itemPrice + ", ";
-
-  return cartStr;
+  for (var i = 0; i <= cart.length; i++){
+  cartStr += cart[0].itemName + " at" + " $" + cart[0].itemPrice + ", ";
 }
+  cartStr = cartStr.slice(0, cartStr.length-6) + "."
+  return "In your cart, you have " + cartStr;
+}
+
+
 
 function total() {
   // write your code here
